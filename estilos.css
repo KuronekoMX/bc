@@ -9,7 +9,7 @@ body
 	background: #EEEEEE;
 	font-family: Arial;
 	font-size: 16px;
-	/* max-width: 320px;  Para cerrar los pixeles */
+	/* max-width: 320px;   Para cerrar los pixeles */
 }
 
 footer
@@ -133,6 +133,11 @@ nav ul #publicar_nav a
 
 }
 
+#barra-lateral
+{
+	display: none;
+}
+
 #contenido
 {
 	margin: 0.5em;
@@ -142,7 +147,7 @@ nav ul #publicar_nav a
 {
 	background: rgba(0,0,0,0.9);
 	/*border-bottom: 3px solid #22BCE0;*/
-	border-radius: 0.5em;
+	border-radius: 0.3em;
 	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
 	min-height: 100px;
 	margin-bottom: 1.3em;
@@ -206,7 +211,7 @@ nav ul #publicar_nav a
 	padding: 0.2em 1em 0 0;
 }
 
- .titulo_item a 
+#contenido .item .titulo_item a 
 {
 	color: #FFF;
 	text-decoration: none;
@@ -232,6 +237,30 @@ nav ul #publicar_nav a
 	float: right;
 }
 
+#destacado_tablet
+{
+	display: none;
+}
+
+
+#tv_inicio_movil
+{
+	text-align: center;
+	/* background: #cccccc; */
+	color: #fff;
+	height: 280px;
+	margin: 0 0 1em 0;
+	width: 100%;
+	/*display: none; A 768px */
+
+}
+
+#tv_inicio_tablet
+{
+	display: none;
+}
+
+
 #tv_inicio
 {
 	background: #cccccc;
@@ -240,6 +269,11 @@ nav ul #publicar_nav a
 	width: 100%;
 
 }
+
+#tv_inicio_desktop
+	{
+		display: none;
+	}
 
 #tv_inicio p 
 {
@@ -251,6 +285,113 @@ nav ul #publicar_nav a
 {
 	color: #fc4186;
 	font-weight: bold;
+	text-align: left;
 }
 
+@media screen and (min-width: 768px){
+
+	
+
+	#contenido
+	{
+		overflow: hidden;
+	}
+
+	#contenido .item
+	{
+		width: 49%;
+		float: left;
+		
+	}
+
+	#contenido .item:nth-child(odd) /*Imparez - columna izquierda*/
+	{
+		margin-right: 2%;
+	}	
+
+	#destacado_tablet
+	{
+		background: black;
+		display: block;
+		width: 100%;
+		height: 250px;
+	}
+
+	#tv_inicio_movil
+	{
+		display: none;
+	}
+
+	#tv_inicio_tablet
+	{
+		display: block;
+		float:right;
+		max-width: 320px;
+	}
+
+	#tv_inicio_desktop
+	{
+		display: none;
+	}
+
+
+}
+
+@media screen and (min-width: 1000px){
+
+	body
+	{
+		background: #666;
+	}
+
+	#barra_lateral
+	{
+		background: #cccccc;
+		display: inline-block;
+		
+		margin: 0.5em 0 0 0;
+		min-height: 400px;
+		vertical-align: top;
+		width: 32%;
+	}
+
+	#contenedor
+	{
+		background: #EEEEEE;
+		margin: 0 auto; /*centrar*/
+		width: 1024px;
+		padding: 0.8em;
+	}
+
+	#contenido
+	{
+		display: inline-block;
+		margin: 0.5em 0;
+		width: 67%;		
+
+	}
+
+	#tv_inicio_movil
+	{
+		display: none;
+	}
+
+	#tv_inicio_tablet
+	{
+		display: none;
+	}
+
+	#tv_inicio_desktop
+	{
+		display: block;
+		float:right;
+		max-width: 320px;
+	}
+
+	/* #contenido .item
+	{
+		max-width: 320px;
+	} */
+
+}
 
