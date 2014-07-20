@@ -83,8 +83,9 @@ nav
 	/*box-shadow: rgba(0,0,0,0.5) 0px 1px 10px;*/
 	background: #FFFFFF;
 	display: inline-block;
-	font-family: sans-serif;
-	padding: 0.4em 0 0.4em 0;
+	font-family: 'Bree Serif', serif;
+	padding: 0.3em 0 0.3em 0;
+	text-transform: uppercase;
 	/*position: relative;  Para que partan de aquí los "0s" y aquí se quede el boton plunlicar*/
 
 }
@@ -120,7 +121,7 @@ nav ul li a
 	background: #FFFFFF;
 	color: #000000;
 	display: block;
-	padding: 0.5em;
+	padding: 0.5em 0.6em;
 	text-decoration: none;
 }
 
@@ -148,6 +149,47 @@ nav ul #publicar_nav a
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 
+}
+
+#banner_horizontal
+{
+	margin-top: 0.4em;
+	overflow: hidden;
+}
+
+#banner_horizontal .banner_760_90
+{
+	margin: 0 auto;
+	width: 301px;
+}
+
+#banner_horizontal img
+{
+	height: 100px;
+	width: 300px;
+	
+}
+
+#banner_slide
+{
+	overflow: hidden;
+}
+
+#banner_slide .banner_300_320
+{
+	margin: 1em auto;
+	max-width: 301px;
+}
+
+#banner_slide .banner_300_320 img
+{
+	height: 100px;
+	width: 300px;
+} 
+
+#barra_lateral
+{
+	display: none;
 }
 
 #contenido
@@ -228,7 +270,7 @@ nav ul #publicar_nav a
 {
 	
 	bottom: 1em;
-	color: #ccc;
+	color: #999;
 	font-size: 0.8em;
 	position: absolute;
 }
@@ -251,11 +293,34 @@ nav ul #publicar_nav a
 	*/
 }
 
+#contenido .item .fecha_item
+{
+
+	color: #999;
+	font-size: 0.8em;
+
+
+}
+
+
+#contenido .item .fecha_item_desktop
+{
+	display: none;
+/*{
+	color: #999;
+	font-size: 0.8em;
+}*/
+}
+
+#contenido .item .fecha_item_tablet
+{
+	display: none;
+}
+
 #contenido .item .titulo_item
 {
 
 	font-size: 1em;
-	font-weight: bold;
 	margin: 0 0 0.5em 0.5em;
 	padding: 0.2em 1em 0 0;
 }
@@ -274,22 +339,28 @@ nav ul #publicar_nav a
 	height: 100px;
 }
 
+#contenido .item .intro
+{
+	display: none;
+}
+
 #contenido .item .titulo_item
 {
 
 	font-size: 1em;
 	font-weight: bold;
 	margin: 0 0 0.5em 0.5em;
-	padding: 0.2em 1em 0 0;
+	padding: 0 1em 0 0;
 }
 
 #contenido .item .titulo_item a 
-{#contenido
+{
 	color: #444;
-	font-family: sans-serif;
+	font-family: 'Bree Serif', sans-serif;
 	font-size:1.1em;
 	font-weight: normal;
 	text-decoration: none;
+	
 
 }
 
@@ -385,15 +456,15 @@ nav ul #publicar_nav a
 
 	}
 
-#tv_inicio_movil
+#musica .cancion
 {
-	text-align: center;
-	margin: 1em 0 1em 0;
-	width: 100%;
-	display: block;
+	
+	width: 98%;
+}
 
-	/*display: none; A 768px */
-
+#slide
+{
+	display: none;
 }
 
 #tv_inicio_movil .caja_video
@@ -401,6 +472,27 @@ nav ul #publicar_nav a
 	background: rgba(0,0,0,0.6);
 	margin-top: 0.4em;
 	height: 250px;
+}
+
+.cintillosnews
+{
+	background-color: #000;
+	border-radius: 0.2em;
+	font-weight: bold;
+	margin-top: 0;
+	text-align: left;
+	width:100%;
+	position:static;
+}
+
+.cintillosnews p 
+{
+	color: #fff;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 1.2em;
+	/*font-weight: bold;*/
+	margin: 0;
+	padding: 0.5em 0 0.5em 0.3em;
 }
 
 .cintillos
@@ -432,6 +524,77 @@ nav ul #publicar_nav a
 		background: #CCCCCC;
 	}
 
+	nav
+	{
+		bottom: 1.3em;
+		position: absolute;
+	}
+
+	nav ul li a 
+	{
+		padding: 0.1em 0.6em;
+
+	}
+
+	#banner_horizontal
+	{
+		margin-top: 0.5em;
+	}
+	
+
+	#banner_horizontal .banner_760_90
+	{
+		margin: 0 auto;
+		width: 760px;
+	}
+
+
+	#banner_horizontal img
+	{
+		width: 760px;
+		height: 90px;
+	}
+
+	#banner_slide
+	{
+		overflow: hidden;
+	}
+
+	#banner_slide .banner_300_320
+	{
+		
+		margin: 1em auto;
+		max-width: 650px
+	}
+
+	#banner_slide .banner_300_320 img
+	{		
+		display: inline-block;
+		margin-bottom: 0;
+		width: 320px;
+
+		height: 250px;
+
+
+	}
+
+	#barra_lateral
+	{
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 1em;
+
+	}
+
+	#barra_lateral .elemento
+	{	
+		background: #666;
+		display: inline-block;
+		height: 300px;
+		margin-top: 1em;
+		width: 320px;
+	}
+
 	#contenedor
 	{
 		background: #EEEEEE;
@@ -441,14 +604,62 @@ nav ul #publicar_nav a
 
 	#contenido
 	{
+		display: inline-block;
 		margin: 1em;
 		max-width: 100%; 
 	}
 
+	
+
 	#contenido .item
 	{
+		display: inline-block;
 		overflow: hidden;
+		
 	}
+
+	#contenido .item .datos_item
+	{
+		
+		margin: 0.3em 1em 0 0;
+		width: 100%;
+	}
+
+	#contenido .item .fecha_item_tablet
+	{
+		
+		display: inline-block;
+		color: #666;
+		font-size: 0.8em;
+		
+		margin: 0 0 0.2em 0;
+
+
+	}
+
+	#contenido .item .datos_item .tag_item
+	{
+
+		background: #F4502A;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		padding: 0.1em 0.2em;
+		text-decoration: none;
+		position: absolute;
+		right: 0.4em;
+	
+	}
+
+
+	#contenido .item .fecha_item
+	{
+		display: none;
+	}
+	
+	
 
 	#contenido .item .imagen_item
 	{
@@ -467,21 +678,123 @@ nav ul #publicar_nav a
 		/* height: 100px; */
 	}
 
+	#contenido .item .intro
+	{
+		display: block;
+		font-size: 1em;
+		
+	}
+
+	#contenido .item .titulo_item
+	{
+
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0 0 1em 0.5em;
+		padding: 0.2em 0.4em 0 0;
+	}
+
+	#contenido .item .titulo_item a
+	{
+
+		
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
+
+
 	#musica
 	{
-		width: 50%;
+		width: 100%;
 	}
 
-	#tv_inicio_movil
+	#musica .cancion
 	{
-		width: 50%;
+		display: inline-block;
+		padding: 0 0.2em;
+		margin: 0.3em 0;
+		width: 48%;
 	}
 
-	.destacados
+	#slide
+	{
+		background: #000000;
+		display: block;
+		height: 310px;
+		width: 100%
+	}
+
+	#tv_inicio_movil .caja_video
+	{
+		display: inline-block;
+		height: 315px;
+		width: 560px;
+		vertical-align: top;
+
+	}
+
+	#tv_inicio_movil #mas_videos
+	{
+		display: inline-block;
+
+	}
+
+
+	#tv_inicio_movil #mas_videos .item_videos
+	{
+		/* background: rgba(0,0,0,0.3);
+		/*border-bottom: 3px solid #ffffff;*/
+		/* border-radius: 0.3em; */
+		min-height: 100px;
+		padding: 0 0 0.3em 0;
+		border-bottom: 1px dotted white;
+		position: relative;
+		text-align: left;
+		width: 100%;
+	}
+
+	#tv_inicio_movil #mas_videos .titulo_item
 	{
 		display: none;
 	}
 
+	
+	.destacados
+	{
+		display: none;
+	}
+	
+} /*Termina 768px*/
+
+@media screen and (min-width: 1104px){
+
+	#barra_lateral
+	{
+		margin: 0;
+		width: 320px;
+		vertical-align: top;
+	}
+
+	#barra_lateral .elemento
+	{
+		width: 320px;
+	}
+
+	#contenedor
+	{
+		background: #EEEEEE;
+		margin: 0 auto;
+		max-width: 1090px;
+	}
+
+	#contenido
+	{
+		display: inline-block;
+		margin: 0.5em 0.8em;
+		max-width: 725px; 
+
+	}
 
 
 }
