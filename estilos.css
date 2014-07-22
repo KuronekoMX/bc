@@ -121,7 +121,7 @@ nav ul li a
 	background: #FFFFFF;
 	color: #000000;
 	display: block;
-	padding: 0.5em 0.6em;
+	padding: 0.5em 0.5em;
 	text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ nav ul #publicar_nav a
 	overflow: hidden;
 }
 
-#banner_horizontal .banner_760_90
+#banner_horizontal .banner_728_90
 {
 	margin: 0 auto;
 	width: 301px;
@@ -175,13 +175,13 @@ nav ul #publicar_nav a
 	overflow: hidden;
 }
 
-#banner_slide .banner_300_320
+#banner_slide .banner_300_250
 {
 	margin: 1em auto;
 	max-width: 301px;
 }
 
-#banner_slide .banner_300_320 img
+#banner_slide .banner_300_250 img
 {
 	height: 100px;
 	width: 300px;
@@ -196,6 +196,107 @@ nav ul #publicar_nav a
 {
 	margin: 0.5em;
 }
+
+#contenido #post .item 
+{
+	border-bottom: 0;
+	padding: 0 0.5em 0 0.5em;
+}
+
+#contenido #post .item .fecha_post
+{
+	
+	
+	display: inline-block;
+	color: #666;
+	font-size: 0.8em;	
+	margin: 0 0 0.2em 0;
+}
+
+#contenido #post .item .titulo_post 
+{
+	border-bottom: 1px solid #666;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 1em 1em 0 0;
+	text-transform: uppercase;
+
+}
+
+#contenido #post .item .titulo_post a 
+{
+	color: #444;
+	font-family: 'Bree Serif', sans-serif;
+	font-size:1.1em;
+	font-weight: normal;
+	text-decoration: none;
+	
+
+}
+
+#contenido  #post .item .redes_item
+{
+	
+	overflow: hidden;
+}
+
+
+#contenido  #post .item .redes_item .google_plus
+	{
+
+		background: red;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0 0.5em 0.5em 0;
+		padding: 0.8em 3em;
+		text-decoration: none;
+		right: 0.4em;
+	
+	}
+
+#contenido  #post .item .redes_item .facebook
+	{
+
+		background: #3074ae;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0 0.5em 0.5em 0;
+
+		padding: 0.8em 3em;
+		text-decoration: none;
+		right: 0.4em;
+	
+	}
+
+#contenido  #post .item .redes_item .twitter
+	{
+
+		background: #4eaeff;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0 0.5em 0.5em 0;
+		padding: 0.8em 3em;
+		text-decoration: none;
+		right: 0.4em;
+	
+	}
+
+
+#contenido  #post .item .redes_item_top
+{
+	display: none;
+}
+
+
 
 #contenido .destacados .item_destacado
 {
@@ -292,6 +393,8 @@ nav ul #publicar_nav a
 	right: 0.4em;
 	*/
 }
+
+
 
 #contenido .item .fecha_item
 {
@@ -526,52 +629,55 @@ nav ul #publicar_nav a
 
 	nav
 	{
-		bottom: 1.3em;
+		bottom: 1em;
 		position: absolute;
 	}
 
 	nav ul li a 
 	{
-		padding: 0.1em 0.6em;
+		padding: 0.1em 0.5em;
 
 	}
 
 	#banner_horizontal
 	{
-		margin-top: 0.5em;
+		margin-top: 0;
+		padding: 0.4em 0;
+		background: url(http://mixmag.net/sites/all/themes/mixmag/images/css/header-bg.png);
 	}
 	
 
-	#banner_horizontal .banner_760_90
+	#banner_horizontal .banner_728_90
 	{
 		margin: 0 auto;
-		width: 760px;
+		width: 728px;
 	}
 
 
 	#banner_horizontal img
 	{
-		width: 760px;
+		width: 728px;
 		height: 90px;
 	}
 
 	#banner_slide
 	{
 		overflow: hidden;
+		background: url(http://mixmag.net/sites/all/themes/mixmag/images/css/header-bg.png);
 	}
 
-	#banner_slide .banner_300_320
+	#banner_slide .banner_300_250
 	{
 		
 		margin: 1em auto;
-		max-width: 650px
+		max-width: 650px;
 	}
 
-	#banner_slide .banner_300_320 img
+	#banner_slide .banner_300_250 img
 	{		
 		display: inline-block;
 		margin-bottom: 0;
-		width: 320px;
+		width: 300px;
 
 		height: 250px;
 
@@ -587,19 +693,25 @@ nav ul #publicar_nav a
 	}
 
 	#barra_lateral .elemento
-	{	
+	{
 		background: #666;
 		display: inline-block;
-		height: 300px;
-		margin-top: 1em;
-		width: 320px;
+		height: 250px;
+		margin-top: 0.5em;
+		width: 300px;
+	}
+
+	#barra_lateral .elemento img
+	{
+		height: 250px;
+		width: 300px;
 	}
 
 	#contenedor
 	{
 		background: #EEEEEE;
 		margin: 0 auto;
-		max-width: 768px;
+		width: 100%;
 	}
 
 	#contenido
@@ -609,7 +721,82 @@ nav ul #publicar_nav a
 		max-width: 100%; 
 	}
 
-	
+	#contenido  #post .item .redes_item .google_plus
+	{	
+
+
+		margin: 0 0.5em;
+		padding: 0.3em 1.5em;
+
+	}
+
+	#contenido  #post .item .redes_item .facebook
+	{	
+		margin: 0 0.5em;
+		padding: 0.3em 1.5em;
+
+	}
+
+	#contenido  #post .item .redes_item .twitter
+	{	
+		margin: 0 0.5em;
+		padding: 0.3em 1.5em;
+
+	}
+
+	#contenido  #post .item .redes_item_top
+	{
+		
+		display: inline-block;
+		float: right;
+	}
+
+	#contenido  #post .item .redes_item_top .google_plus
+	{	
+		background: red;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0.2em 0.5em;
+		padding: 0.1em 0.7em;
+		text-decoration: none;
+		right: 0.4em;
+
+		
+
+	}
+
+	#contenido  #post .item .redes_item_top .facebook
+	{	
+		background:  #3074ae;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0.2em 0.5em;
+		padding: 0.1em 0.7em;
+		text-decoration: none;
+		right: 0.4em;
+
+	}
+
+	#contenido  #post .item .redes_item_top .twitter
+	{	
+		background: #4eaeff;
+		border-radius: 0.3em;
+		bottom: 1.3em;
+		color: white;
+		display: inline-block;
+		float: right;
+		margin: 0.2em 0.5em;
+		padding: 0.1em 0.7em;
+		text-decoration: none;
+		right: 0.4em;
+
+	}
 
 	#contenido .item
 	{
@@ -617,6 +804,8 @@ nav ul #publicar_nav a
 		overflow: hidden;
 		
 	}
+
+
 
 	#contenido .item .datos_item
 	{
@@ -752,6 +941,7 @@ nav ul #publicar_nav a
 		position: relative;
 		text-align: left;
 		width: 100%;
+
 	}
 
 	#tv_inicio_movil #mas_videos .titulo_item
@@ -767,32 +957,52 @@ nav ul #publicar_nav a
 	
 } /*Termina 768px*/
 
-@media screen and (min-width: 1104px){
+@media screen and (min-width: 1024px){
 
 	#barra_lateral
 	{
 		margin: 0;
-		width: 320px;
+		width: 300px;
 		vertical-align: top;
 	}
 
 	#barra_lateral .elemento
 	{
-		width: 320px;
+		width: 300px;
 	}
 
 	#contenedor
 	{
 		background: #EEEEEE;
 		margin: 0 auto;
-		max-width: 1090px;
+		max-width: 1024px;
 	}
 
 	#contenido
 	{
 		display: inline-block;
-		margin: 0.5em 0.8em;
-		max-width: 725px; 
+		margin: 0.5em 0.6em 0.5em 0.8em;
+		max-width: 680px; 
+
+	}
+
+	#contenido .item .intro p
+	{
+		margin-top: 0;
+		font-size: 0.9em;
+	}
+
+	#contenido .item .titulo_item
+	{
+		margin-bottom: 0.6em;
+	}
+
+	#tv_inicio_movil .caja_video
+	{
+		display: inline-block;
+		height: 315px;
+		width: 510px;
+		vertical-align: top;
 
 	}
 
